@@ -24,6 +24,7 @@
 </script>
 
 <div class="papers">
+    <label>Papers</label>
     {#each $papers as paper, index (paper) }
         <Paper {index} color={paper.color} title={paper.title}/>
     {/each}
@@ -33,10 +34,13 @@
 <style type="text/scss">
     .papers {
         vertical-align: top;
-        border: 1px solid black;
         margin: 1em;
-        padding: 1em;
         display: inline-block;
+        label {
+            &:not(:first-of-type) {
+                margin: 0.8rem 0 0.2rem;
+            }
+        }
     }
     button {
         position: relative;

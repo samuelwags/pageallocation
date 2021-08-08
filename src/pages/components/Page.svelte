@@ -20,13 +20,13 @@
 <style type="text/scss">
     .page {
         float: left;
-        width: 100px;
+        width: 80px;
         text-align: center;
         &.odd {
-
+            margin-left: -1px;
         }
         &.even {
-            margin-left: 10px;
+            margin-left: 15px;
         }
         .pageContent {
             border: 1px solid black;
@@ -35,12 +35,15 @@
             p {
                 margin: 0;
                 padding: 1rem 0;
-                height: 120px;
+                height: 65px;
             }
         }
         .inks {
             display: flex;
             height: 20px;
+        }
+        .pageNum {
+            margin: 0.2rem 0 0.5rem;
         }
     }
 

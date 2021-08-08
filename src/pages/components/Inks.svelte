@@ -24,6 +24,7 @@
 </script>
 
 <div class="inks">
+    <label>Inks</label>
     {#each $inks as ink, index}
         <Ink title={ink.title} color={ink.color} {index} />
     {/each}
@@ -35,9 +36,20 @@
 <style type="text/scss">
     .inks {
         vertical-align: top;
-        border: 1px solid black;
         margin: 1em;
-        padding: 1em;
         display: inline-block;
+    }
+
+    button {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        border-radius: 1rem;
+        transition: 0.5s ease background-color;
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(200, 200, 200);
+        }
     }
 </style>
